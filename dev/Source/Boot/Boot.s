@@ -1,5 +1,5 @@
 @
-@ Copyright (c) 2012-2013, Stuart Wheater, Newcastle upon Tyne, England. All rights reserved.
+@ Copyright (c) 2013, Stuart Wheater, Newcastle upon Tyne, England. All rights reserved.
 @
 
 	.text
@@ -12,6 +12,8 @@ boot_wait:
 
 	.ltorg
 
+	.bss
+	
 	.align	4
 	.space	4096
 boot_stack:

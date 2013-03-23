@@ -9,7 +9,9 @@ SIZE    = arm-none-eabi-size
 MAKE    = make
 RM      = rm
 
-OBJS = Source/Boot/Boot.o
+OBJS = Source/Boot/Boot.o \
+       \
+       Source/mFRAME/Run.o
 
 all: mFRAME.img
 
