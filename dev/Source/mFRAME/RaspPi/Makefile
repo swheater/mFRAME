@@ -3,18 +3,15 @@
 #
 
 CC      = arm-none-eabi-gcc
-CCFLAGS = -Wall -I../../Headers
-RM      = make
+CCFLAGS = -Wall -I../../../Headers
 RM      = rm
 
-OBJS = Run.o
+OBJS = FrameBuffer.o MailBox.o
 
 all: $(OBJS)
-	$(MAKE) -e -C RaspPi all
 
 .c.o:
 	$(CC) $(CCFLAGS) -c $<
 
 clean:
-	$(MAKE) -e -C RaspPi clean
 	$(RM) -f *~ *.o
